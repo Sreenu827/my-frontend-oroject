@@ -84,6 +84,13 @@
                     </execution>
                 </executions>
             </plugin>
+
+            <!-- Maven WAR Plugin (downgraded to a compatible version) -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.0.0</version> <!-- Downgraded version compatible with Maven 3.0.5 -->
+            </plugin>
         </plugins>
     </build>
 </project>
